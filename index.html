@@ -38,7 +38,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-            <img src="img/menulogo.jpg" id="menulogo" alt="">
+            <img src="img/menulogo.png" id="menulogo" alt="">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -57,13 +57,10 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio" class="link">Programming</a>
+                        <a href="#about" class="link">Predict</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about" class="link">About</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="http://www.eventbrite.com/e/rpi-swe-collegiate-leadership-summit-tickets-17573216965" class="link">Register</a>
+                        <a href="#portfolio" class="link">View Historical Data</a>
                     </li>
                 </ul>
             </div>
@@ -74,13 +71,13 @@
 
     <!-- Header -->
     <header>
-        <div id="top" style="background-image: url(img/rosie.png); background-repeat: no-repeat; background-position: top center;">
+        <div id="top" style="background-image: url(img/plan.jpg); background-repeat: no-repeat; background-position: top center;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="intro-text">
-                            <span class="name">We Can Do It</span>
-                            <span class="skills">RPI's SWE Section invites you to join us at our Summit to promote gender equality in STEM fields.</span>
+                            <span class="name">Bridge to the Bicentennial</span>
+                            <span class="skills">Our tool helps the institution gauge the effectiveness of diversity initiatives by predicting student population diversity.</span>
                         </div>
                     </div>
                 </div>
@@ -88,100 +85,147 @@
         </div>
     </header>
 
-    <!-- About Section -->
+    <!-- Historical Data Section -->
     <section class="success" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>About</h2>
+                    <h2>Predict</h2>
                     <hr class="star-light">
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>Come join us from September 12th to September 13th at Rensselaer Polytechnic Insitute to partake in our first ever Leadership Summit! The conference will include leadership training based on communication, team building, and public speaking.</p>
-                </div>
-                <div class="col-lg-4">
-                    <p>You can register for any of our 3 options! The $40 registration fee includes lodging for two nights, food, and swag, the $35 registration fee includes lodging for a night, food, and swag, and lastly, the $25 registration fee includes all of the aforementioned amenities with the exception of lodging. We hope to see you there!</p>
-                </div>
+                <form>
+                    <div class="col" style="padding-left:300px;">
+                        <br>
+                        <big>Predictions will be done ranging from the current year to the selected end year.</big><br>
+                        
+                        <big>Please select an end year:</big>
+                        </br>
+                        </br>
+                        *End Year:
+                        <select id="endyear" name="endyear" required>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                        </select>
+                        </br>
+                        </br>
+                        <big>Please select at least one diversity criterion:</big>
+                            </br>
+                            </br>
+                                <input type="checkbox" name="vehicle"> Education Level<br>
+                                <input type="checkbox" name="vehicle"> Ethnicity<br>
+                                <input type="checkbox" name="vehicle"> Gender<br>
+                        <br>
+                        Please select a type of visual:
+                        <select id="endyear" name="endyear" required>
+                            <option value="pie">Pie Chart</option>
+                            <option value="bar">Bar Graph</option>
+                            <option value="line">Line Graph</option>
+                        </select>
+                    </div>
+                                        </br>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="http://www.eventbrite.com/e/rpi-swe-collegiate-leadership-summit-tickets-17573216965" class="btn btn-lg btn-outline">
-                        Register 
+                    <a href="predict.html" class="btn btn-lg btn-outline">
+                        Predict 
                     </a>
                 </div>
             </div>
         </div>
+        </form>
     </section>
 
-    <!-- Portfolio Grid Section -->
+    <!-- Predict Section -->
     <section id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 style="color: black">Programming</h2>
-                    <hr class="star-primary">
+                    <h2 style="color: black">View Historical Data</h2>
+                    <hr class="star-primary" style="background-color:#e50000;">
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4 portfolio-item" style="margin-left: 200px;">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i>Saturday, September 12th</i>
-                            </div>
-                        </div>
-                        <img src="img/block1.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i>Sunday, September 13th</i>
-                            </div>
-                        </div>
-                        <img src="img/block2.png" class="img-responsive" alt="">
+                <form>
+                    <div class="col" style="padding-left:400px;">
+                        <big>Please select start & end years:</big>
+                        <br>
+                        <br>
+                        *Start Year:
+                        <select id="startyear" name="endyear" required>
+                            <option value="2000">2000</option>
+                            <option value="2001">2001</option>
+                            <option value="2002">2002</option>
+                            <option value="2003">2003</option>
+                            <option value="2004">2004</option>
+                            <option value="2005">2005</option>
+                            <option value="2006">2006</option>
+                            <option value="2007">2007</option>
+                            <option value="2008">2008</option>
+                            <option value="2009">2009</option>
+                            <option value="2010">2010</option>
+                            <option value="2011">2011</option>
+                            <option value="2012">2012</option>
+                            <option value="2013">2013</option>
+                            <option value="2014">2014</option>
+                            <option value="2015">2016</option>
+                        </select>
+                        </br>
+                        </br>
+                        *End Year:
+                        <select id="endyear" name="endyear" required>
+                            <option value="2000">2000</option>
+                            <option value="2001">2001</option>
+                            <option value="2002">2002</option>
+                            <option value="2003">2003</option>
+                            <option value="2004">2004</option>
+                            <option value="2005">2005</option>
+                            <option value="2006">2006</option>
+                            <option value="2007">2007</option>
+                            <option value="2008">2008</option>
+                            <option value="2009">2009</option>
+                            <option value="2010">2010</option>
+                            <option value="2011">2011</option>
+                            <option value="2012">2012</option>
+                            <option value="2013">2013</option>
+                            <option value="2014">2014</option>
+                            <option value="2015">2016</option>
+                        </select>
+                        </br>
+                        </br>
+                        <big>Please select at least one diversity criterion:</big>
+                            </br>
+                            </br>
+                                <input type="checkbox" name="vehicle"> Education Level<br>
+                                <input type="checkbox" name="vehicle"> Ethnicity<br>
+                                <input type="checkbox" name="vehicle"> Gender<br></br>
+                                                Please select a type of visual:
+                        <select id="endyear" name="endyear" required>
+                            <option value="pie">Pie Chart</option>
+                            <option value="bar">Bar Graph</option>
+                            <option value="line">Line Graph</option>
+                        </select>
+                    </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a href="history.html" class="btn btn-lg btn-outline">
+                        View 
                     </a>
                 </div>
             </div>
-        </div>
+
     </section>
 
     <!-- Footer -->
     <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>110 8th Street<br>Troy, NY 12180</p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="https://www.facebook.com/RPISWE?fref=ts" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/rpiswe" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="http://swe.union.rpi.edu/" class="btn-social btn-outline"><i class="fa fa-fw fa-link"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Questions?</h3>
-                        <p>Feel free to shoot us an email at<a href="mailto:swe@union.rpi.edu"><br> RPI SWE</a>!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="footer-below">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Created by Ylonka Machado, 2015
+                        Created by X-Informatics Team 6, Spring 2017
                     </div>
                 </div>
             </div>
@@ -196,7 +240,7 @@
     </div>
 
     <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <!--div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -229,31 +273,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Sunday, September 13th</h2>
-                            <hr class="star-primary">
-                            <img src="img/block4.png" class="img-responsive img-centered" alt="">
-                            <p>On Sunday, we'll have leadership workshops going on throughtout the day; they will be led by Leadership Educators Advising Peers (LEAP), a student organization who works with the Archer Center for Student Leadership Development</p>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    </div-->
+    
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 

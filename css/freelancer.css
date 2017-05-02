@@ -10,6 +10,7 @@ body {
 
 p {
     font-size: 20px;
+    color: black;
 }
 
 p.small {
@@ -22,7 +23,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #ffe700;
+    color: #696969;
 }
 
 h1,
@@ -62,8 +63,8 @@ hr.star-light {
 }
 
 hr.star-light:after {
-    color: #ffe700;
-    background-color: #ba2b23;
+    color: yellow;
+    background-color: #FCDC3B;
 }
 
 hr.star-primary {
@@ -71,7 +72,7 @@ hr.star-primary {
 }
 
 hr.star-primary:after {
-    color: #ffe700;
+    color: yellow;
     background-color: #fff;
 }
 
@@ -200,8 +201,8 @@ section h2 {
 }
 
 section.success {
-    color: #fff;
-    background: #ba2b23;
+    color: black;
+    background:#FCDC3B;
 }
 
 section.success a:hover,
@@ -209,7 +210,7 @@ section.success a:focus,
 section.success a:active,
 section.success a.active {
     outline: 0;
-    color: #2c3e50;
+    color: black;
 }
 
 @media(max-width:767px) {
@@ -281,10 +282,10 @@ section.success a.active {
 
 .btn-outline {
     margin-top: 15px;
-    border: solid 2px #fff;
+    border: black;
     font-size: 20px;
-    color: #fff;
-    background: 0 0;
+    color: white;
+    background: black;
     transition: all .3s ease-in-out;
 }
 
@@ -293,7 +294,7 @@ section.success a.active {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #2c3e50;
+    color: black;
     background: #fff;
 }
 
@@ -346,7 +347,7 @@ section.success a.active {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #2c3e50;
+    color: black;
 }
 
 form .row:first-child .floating-label-form-group {
